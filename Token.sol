@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENCED
 // Enable optimization
-pragma solidity ^0.8.17;
+pragma solidity ^0.8.11;
 
 import "./TRC20.sol";
 import "./TRC20Detailed.sol";

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENCED
-pragma solidity ^0.8.17;
+pragma solidity ^0.8.11;
 
 import "./ITRC20.sol";
 
