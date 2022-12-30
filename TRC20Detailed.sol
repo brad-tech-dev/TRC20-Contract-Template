@@ -1,11 +1,12 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: UNLICENCED
+pragma solidity ^0.8.17;
 
 import "./ITRC20.sol";
 
 /**
  * @dev Optional functions from the TRC20 standard.
  */
-contract TRC20Detailed is ITRC20 {
+abstract contract TRC20Detailed is ITRC20 {
     string private _name;
     string private _symbol;
     uint8 private _decimals;
@@ -15,10 +16,10 @@ contract TRC20Detailed is ITRC20 {
      * these values are immutable: they can only be set once during
      * construction.
      */
-    constructor (string memory name, string memory symbol, uint8 decimals) public {
-        _name = name;
-        _symbol = symbol;
-        _decimals = decimals;
+    constructor (string memory name_, string memory symbol_, uint8 decimals_) {
+        _name = name_;
+        _symbol = symbol_;
+        _decimals = decimals_;
     }
 
     /**
